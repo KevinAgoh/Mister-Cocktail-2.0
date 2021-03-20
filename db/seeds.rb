@@ -8,6 +8,10 @@
 require 'json'
 require 'open-uri'
 
+Cocktail.create(name: "White Russian")
+Cocktail.create(name: "Moscow Mule")
+Cocktail.create(name: "Sex on the Beach")
+
 url = 'https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list'
 ingredients_serialized = open(url).read
 ingredients = JSON.parse(ingredients_serialized)
