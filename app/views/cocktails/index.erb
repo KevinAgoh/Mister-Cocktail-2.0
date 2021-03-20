@@ -1,0 +1,9 @@
+<div class="container">
+  <h1>Welcome to Keum's cocktails</h1>
+
+  <ul>
+    <% @cocktails.each do |cocktail| %>
+      <li><%= cocktail.name %> <%= cocktail.description %></li>
+    <% end %>
+  </ul>
+</div>
