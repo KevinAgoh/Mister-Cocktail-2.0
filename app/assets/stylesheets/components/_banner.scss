@@ -3,7 +3,10 @@
   display: flex;
   background-image: asset-url('banner-pic.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  object-fit: cover;
 }
 
 .banner h1 {
