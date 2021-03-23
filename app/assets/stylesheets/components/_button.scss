@@ -6,14 +6,14 @@
   font-family: Open Sans;
   font-size: 18px;
   font-weight: 100;
-  padding: 20px;
+  padding: 10px;
   background-color: #FFB703;
-  text-shadow: 1px 1px 20px #000000;
   border: solid #337FED 0;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
   text-align: center;
+  align-self: center;
 }
 
 .btn-yellow:hover {
@@ -23,4 +23,5 @@
   -moz-border-radius: 8px;
   border-radius: 8px;
   text-decoration: none;
+  color: #FFFFFF;
 }

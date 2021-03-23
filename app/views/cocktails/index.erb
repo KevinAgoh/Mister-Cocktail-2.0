@@ -1,10 +1,10 @@
-<div class="container">
-  <div class="banner">
-    <div id="title">
-      <h1>Welcome to Keum's cocktails</h1>
-      <a href="#" class="btn-yellow">Button</a>
-    </div>
+<div class="banner">
+  <div id="title">
+    <span id="banner-typed-text"></span>
   </div>
+  <a href="#" class="btn-yellow">Cocktails!</a>
+</div>
+<div class="container">
   <ul>
     <% @cocktails.each do |cocktail| %>
       <li><%= link_to cocktail.name, cocktail_path(cocktail.id) %></li>

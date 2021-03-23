@@ -1,7 +1,8 @@
 .banner {
   height: 100vh;
   display: flex;
-  background-image: asset-url('banner-pic.jpg');
+  flex-direction: column;
+  background-image: asset-url('banner-pic.jpg'), linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -12,13 +13,26 @@
 
 .banner h1 {
   margin: 0;
-  color: white;
+  color: #FFB703;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 32px;
   font-weight: bold;
   text-align: center;
+
+  &:hover {
+    color: #FB8500;
+  }
 }
 
 #title {
   align-self: center;
+}
+
+#banner-typed-text {
+  margin: 0;
+  color: #FFB703;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
 }
