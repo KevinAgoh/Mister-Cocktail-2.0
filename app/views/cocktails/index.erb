@@ -1,13 +1,13 @@
 <div class="container">
   <div class="banner">
-    <h1>Welcome to Keum's cocktails</h1>
+    <div id="title">
+      <h1>Welcome to Keum's cocktails</h1>
+    </div>
   </div>
-
   <ul>
     <% @cocktails.each do |cocktail| %>
       <li><%= link_to cocktail.name, cocktail_path(cocktail.id) %></li>
     <% end %>
   </ul>
-
   <h3><%= link_to "Add a new cocktail", new_cocktail_path %></h3>
 </div>
