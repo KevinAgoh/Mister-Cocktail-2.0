@@ -1,0 +1,15 @@
+body {
+  color: $yellow;
+}
+
+a {
+  color: $orange;
+
+  &:hover {
+    color: $yellow;
+  }
+}
+
+#dose {
+  border: solid 1px #ffb703;
+}

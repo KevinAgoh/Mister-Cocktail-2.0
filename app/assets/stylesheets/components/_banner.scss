@@ -36,3 +36,16 @@
   font-weight: bold;
   text-align: center;
 }
+
+.banner-half {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  background-image: asset-url('banner-pic.jpg'), linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  object-fit: cover;
+  justify-content: center;
+}
