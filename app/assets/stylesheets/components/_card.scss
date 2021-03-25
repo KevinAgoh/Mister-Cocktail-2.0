@@ -1,0 +1,25 @@
+.circular-card {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 20px;
+  background-color: $orange;
+
+  &:hover {
+    -webkit-box-shadow: 0px 0px 5px 4px #f7b358;
+    box-shadow: 0px 0px 5px 4px #f7b358;
+    text-decoration: none;
+  }
+}
+
+.circular-card p {
+  color: $yellow;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-size: 22px;
+
+  &:hover {
+    text-decoration: none;
+    transition: 0.3s;
+  }
+}

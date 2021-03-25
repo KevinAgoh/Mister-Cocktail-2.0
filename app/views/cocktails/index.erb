@@ -5,10 +5,14 @@
   <a href="#" class="btn-yellow">Cocktails!</a>
 </div>
 <div class="container">
-  <ul>
+  <div class="row justify-content-center my-3">
     <% @cocktails.each do |cocktail| %>
-      <li><%= link_to cocktail.name, cocktail_path(cocktail.id) %></li>
+      <%= link_to cocktail_path(cocktail.id) do %>
+        <div class="circular-card d-flex align-items-center justify-content-center m-3">
+          <p><%= cocktail.name %></p>
+        </div>
+      <% end %>
     <% end %>
-  </ul>
+  </div>
   <h3><%= link_to "Add a new cocktail", new_cocktail_path %></h3>
 </div>
