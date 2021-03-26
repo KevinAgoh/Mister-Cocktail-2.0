@@ -1,9 +1,12 @@
 <div class="container">
-  <h1>Create a new cocktail</h1>
-  <%= simple_form_for(@cocktail) do |f| %>
-    <%= f.input :name %>
-    <%= f.submit %>
-  <% end %>
-
+  <div class="mt-3">
+    <h1>Create a new cocktail</h1>
+  </div>
+  <div class="py-3">  
+    <%= simple_form_for(@cocktail) do |f| %>
+      <%= f.input :name %>
+      <%= f.button :submit, class: "btn-yellow" %>
+    <% end %>
+  </div>
   <%= link_to "Back to homepage", cocktails_path %>
 </div>
