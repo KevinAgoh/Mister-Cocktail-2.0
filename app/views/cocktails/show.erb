@@ -13,7 +13,8 @@
           <%= link_to 'Delete dose <i class="fas fa-trash"></i>'.html_safe,
                       dose_path(dose),
                       method: :delete,
-                      data: { confirm: "Are you sure?"} %>
+                      data: { confirm: "Are you sure?"},
+                      class: "btn-yellow" %>
         </div>
       <% end %>
     </div>
@@ -22,7 +23,7 @@
         <h2 class="py-3">Add a new dose</h2>
         <%= f.association :ingredient %>
         <%= f.input :description %>
-        <%= f.button :submit %>
+        <%= f.button :submit, class: "btn-yellow" %>
       <% end %>
     </div>
   </div>
