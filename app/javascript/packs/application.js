@@ -17,12 +17,13 @@ require("channels")
 // const imagePath = (name) => images(name, true)
 import 'bootstrap';
 import 'jquery-bar-rating/dist/themes/css-stars';
+
 import { loadDynamicBannerText } from '../components/banner';
-import { initStarRating } from '../components/init_star_rating';
+import { initStarRating } from '../components/stars';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your JS functions here
   // [...]
-  loadDynamicBannerText();
   initStarRating();
+  loadDynamicBannerText();
 });

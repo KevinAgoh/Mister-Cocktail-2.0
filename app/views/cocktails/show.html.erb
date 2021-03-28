@@ -41,7 +41,7 @@
     <div class="col-sm-12 col-md-6">
       <%= simple_form_for [@cocktail, @review] do |f| %>
         <h2 class="py-3">Add a review</h2>
-        <%= f.input :rating, collection: 1..5, label: "Rate the cocktail", as: :select, input_html: { id: 'rating' } %>
+        <%= f.input :rating, collection: 1..5, label: "Rate the cocktail", as: :select, input_html: { id: 'review_rating' } %>
         <%= f.input :content, label: "Let us know what you think about this cocktail 😀" %>
         <%= f.button :submit, "Review", class: "btn-yellow" %>
       <% end %>
@@ -49,14 +49,3 @@
   </div>
   <%= link_to "Back to homepage", cocktails_path %>
 </div>
-
-<!-- Script for stars in the review form -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-<script src="jquery.barrating.min.js"></script>
-<script type="text/javascript">
-  $(function() {
-    $('#example').barrating({
-      theme: 'fontawesome-stars'
-    });
-  });
-</script>

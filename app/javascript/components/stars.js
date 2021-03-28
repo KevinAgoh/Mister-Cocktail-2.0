@@ -1,7 +1,7 @@
 import 'jquery-bar-rating';
 
 const initStarRating = () => {
-  $('#rating').barrating({
+  $('#review_rating').barrating({
       theme: 'css-stars'
     });
 };
