@@ -7,7 +7,7 @@
   <div class="row m-3">
     <div class="col-sm-12 col-md-6">
       <% @cocktail.doses.each do |dose| %>
-        <div id="dose" class="my-3 p-2">
+        <div id="dose" class="my-3 p-2 yellow-border">
           <h3 class="py-2"><%= dose.ingredient.name %></h3>
           <p><%= dose.description %></p>
           <%= link_to 'Delete dose <i class="fas fa-trash"></i>'.html_safe,
@@ -24,6 +24,24 @@
         <%= f.association :ingredient %>
         <%= f.input :description %>
         <%= f.button :submit, "Add dose", class: "btn-yellow" %>
+      <% end %>
+    </div>
+  </div>
+  <div class="row m-3">
+    <div class="col-sm-12 col-md-6">
+      <% @cocktail.reviews.each do |review| %>
+        <div class="my-3 p-2 yellow-border">
+          <p><%= review.rating %> ⭐</p>
+          <p><%= review.content %></p>
+        </div>
+      <% end %>
+    </div>
+    <div class="col-sm-12 col-md-6">
+      <%= simple_form_for [@cocktail, @review] do |f| %>
+        <h2 class="py-3">Add a review</h2>
+        <%= f.input :rating, collection: 1..5, label: "Rate the cocktail", as: :select, input_html: { id: 'review_rating' } %>
+        <%= f.input :content, label: "Let us know what you think about this cocktail 😀" %>
+        <%= f.button :submit, "Review", class: "btn-yellow" %>
       <% end %>
     </div>
   </div>
